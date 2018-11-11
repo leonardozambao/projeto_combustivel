@@ -1,0 +1,102 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, user-scalable = 0, initial-scale=1.0, maximum-scale=1.0">
+<head>
+<title>Darthfuel</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main">
+	<div class="header">
+		<img class="logo" src="images/logo.png" />
+		<ul class="menu">
+			<li id="logo_carro">
+				<!--<img src="images/car.png">-->
+				<select>
+					<option class="first">Carros</option>
+					<option>Kwid</option>
+					<option>Voyage</option>
+					<option>Palio</option>
+				</select>
+			</li>
+			<li id="logo_moto">
+				<!--<img src="images/moto.png">-->
+				<select>
+					<option class="first">Motos</option>
+					<option>Bros</option>
+					<option>Titan</option>
+					<option>Fan</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+	<div class="comparacao">
+		<h1>Selecione um veículo para começar</h1>
+		<!---->
+		<h2 class="veiculoEscolhido">
+			Kwyd <!-- mostrar o veiculo selecionado no menu acima -->
+		</h2>
+		<table class="info" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<th>
+					Combustível
+				</th>
+				<th>
+					Cidade
+				</th>
+				<th>
+					Estrada
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Gasolina
+				</td>
+				<td>
+					14,9 k/l
+				</td>
+				<td>
+					15,6 k/l
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Álcool
+				</td>
+				<td>
+					10,3 k/l
+				</td>
+				<td>
+					10,8 k/l
+				</td>
+			</tr>
+		</table>
+
+		<h1 style="padding-top: 15px;">
+			Coloque o preço do Álcool e da Gasolina para comparar 
+		</h1>
+		<form id="form_compara">
+			<ul>
+				<li>
+					<img src="images/icon_gas.png">
+					<input id="gasolina" placeholder="R$" type="text" name="gasolina" class="valor"></input>
+				</li>
+				<li>
+					<img src="images/icon_alc.png">
+					<input id="alcool" placeholder="R$" type="text" name="alcool" class="valor"></input>
+				</li>
+				<li>
+					<input id="btn" type="submit" value="Comparar" ></input>
+				</li>
+			</ul>
+		</form>
+		<h1 class="result">
+			#item1# é o mais vantajoso! <!-- substituir #item1# pelo resultado da comparação, mudar display para block quando tiver o resultado -->
+		</h1>
+	</div>
+</div>
+</body>
+</html>
